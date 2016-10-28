@@ -1,0 +1,22 @@
+{
+  "name": "mirum-eslint",
+  "version": "1.0.0",
+  "description": "base javascript linting rules for Mirum web projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/michaelturnwall/mirum-eslint.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/michaelturnwall/mirum-eslint#readme",
+  "peerDependencies": {
+    "eslint": ">= 3"
+  }
+}
