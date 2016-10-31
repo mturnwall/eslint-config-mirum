@@ -16,6 +16,9 @@
   "author": "",
   "license": "MIT",
   "homepage": "https://bitbucket.org/michaelturnwall/mirum-eslint#readme",
+  "devDependencies": {
+    "eslint": "^3.4.0"
+  },
   "peerDependencies": {
     "eslint": ">= 3"
   }
