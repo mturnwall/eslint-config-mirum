@@ -1,5 +1,5 @@
 {
-  "name": "mirum-eslint",
+  "name": "eslint-config-mirum",
   "version": "1.0.0",
   "description": "base javascript linting rules for Mirum web projects",
   "main": "index.js",
