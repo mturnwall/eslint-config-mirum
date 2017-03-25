@@ -20,21 +20,27 @@
     },
     "rules": {
         "no-console": "warn",
-        "no-extra-parens": "error",
+        "no-extra-parens": "off",
         "no-prototype-builtins": "error",
         "no-template-curly-in-string": "error",
         "no-unsafe-negation": "error",
+        "no-unused-vars": [
+            "error",
+            {
+                "args": "none"
+            }
+        ],
         "valid-jsdoc": [
             "error",
             {
                 "requireReturn": false
             }
         ],
-        /* Best Practices - http://eslint.org/docs/rules/#best-practices */
+
         "accessor-pairs": "warn",
         "array-callback-return": "error",
         "block-scoped-var": "error",
-        "class-methods-use-this": "error",
+        "class-methods-use-this": "off",
         "complexity": [
             "warn",
             10
@@ -70,7 +76,7 @@
         "no-implicit-coercion": "error",
         "no-implicit-globals": "warn",
         "no-implied-eval": "warn",
-        "no-invalid-this": "error",
+        "no-invalid-this": "off",
         "no-iterator": "error",
         "no-labels": "error",
         "no-lone-blocks": "error",
@@ -78,6 +84,7 @@
         "no-magic-numbers": [
             "warn",
             {
+                "ignore": [0, 1],
                 "ignoreArrayIndexes": true,
                 "enforceConst": true,
                 "detectObjects": true
@@ -95,12 +102,6 @@
         "no-restricted-properties": "off",
         "no-return-assign": "error",
         "no-script-url": "error",
-        "no-self-assign": [
-            "error",
-            {
-                "props": true
-            }
-        ],
         "no-self-compare": "error",
         "no-sequences": "error",
         "no-throw-literal": "error",
@@ -116,9 +117,9 @@
         "vars-on-top": "warn",
         "wrap-iife": "error",
         "yoda": "error",
-        /* Strict Mode - http://eslint.org/docs/rules/#strict-mode */
+
         "strict": "off",
-        /* Variables - http://eslint.org/docs/rules/#variables */
+
         "init-declarations": "off",
         "no-catch-shadow": "error",
         "no-label-var": "error",
@@ -133,38 +134,38 @@
                 "functions": false
             }
         ],
-        /* Stylistic Issues - http://eslint.org/docs/rules/#stylistic-issues */
+
         "array-bracket-spacing": [
-            2,
+            "error",
             "never"
         ],
         "block-spacing": "error",
         "brace-style": [
-            2,
+            "error",
             "1tbs",
             {
                 "allowSingleLine": true
             }
         ],
-        "camelcase": "0",
+        "camelcase": "off",
         "comma-dangle": ["error", "only-multiline"],
         "comma-spacing": [
-            1,
+            "warn",
             {
                 "before": false,
                 "after": true
             }
         ],
         "comma-style": [
-            2,
+            "error",
             "last"
         ],
         "computed-property-spacing": [
-            2,
+            "error",
             "never"
         ],
         "consistent-this": [
-            2,
+            "error",
             "that"
         ],
         "eol-last": "error",
@@ -174,7 +175,7 @@
         "func-style": "off",
         "id-blacklist": "off",
         "id-length": [
-            2,
+            "error",
             {
                 "min": 2,
                 "properties": "never",
@@ -193,7 +194,7 @@
         ],
         "jsx-quotes": "off",
         "key-spacing": [
-            2,
+            "error",
             {
                 "beforeColon": false,
                 "afterColon": true
@@ -230,7 +231,7 @@
         "no-lonely-if": "error",
         "no-mixed-operators": "error",
         "no-multiple-empty-lines": [
-            1,
+            "warn",
             {
                 "max": 2
             }
@@ -246,14 +247,9 @@
         "no-underscore-dangle": "error",
         "no-unneeded-ternary": "error",
         "no-whitespace-before-property": "error",
-        "object-curly-newline": [
-            "error",
-            {
-                "multiline": true
-            }
-        ],
+        "object-curly-newline": ["error", "always"],
         "object-curly-spacing": [
-            2,
+            "error",
             "never"
         ],
         "object-property-newline": "error",
@@ -266,7 +262,7 @@
         "quotes": ["error", "single"],
         "require-jsdoc": "off",
         "semi-spacing": [
-            1,
+            "warn",
             {
                 "before": false,
                 "after": true
@@ -276,7 +272,7 @@
         "sort-keys": "off",
         "sort-vars": "off",
         "space-before-blocks": [
-            1,
+            "warn",
             "always"
         ],
         "space-before-function-paren": [
@@ -289,7 +285,7 @@
         "space-in-parens": ["error", "never"],
         "space-infix-ops": "error",
         "space-unary-ops": [
-            2,
+            "error",
             {
                 "words": true,
                 "nonwords": false
@@ -298,7 +294,7 @@
         "spaced-comment": ["warn", "always"],
         "unicode-bom": "off",
         "wrap-regex": "off",
-        /* ECMAScript 6 - http://eslint.org/docs/rules/#ecmascript-6 */
+
         "arrow-body-style": "error",
         "arrow-parens": "error",
         "arrow-spacing": [
@@ -311,7 +307,7 @@
         "no-confusing-arrow": [
             "error",
             {
-                "allowParens": false
+                "allowParens": true
             }
         ],
         "no-duplicate-imports": "error",
@@ -321,7 +317,7 @@
         "no-useless-rename": "error",
         "no-var": "warn",
         "object-shorthand": "error",
-        "prefer-arrow-callback": "warn",
+        "prefer-arrow-callback": "off",
         "prefer-const": "warn",
         "prefer-numeric-literals": "off",
         "prefer-rest-params": "warn",
