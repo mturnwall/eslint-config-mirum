@@ -21,6 +21,10 @@ Create an eslint config file named `.eslintrc.json`. This file is JSON.
 }
 ```
 
+## Rules
+
+[Eslint Rules](http://eslint.org/docs/rules/)
+
 ## Support
 
 If you have any issues contact [Michael Turnwall](mailto:michael.turnwall@mirumagency.com).
